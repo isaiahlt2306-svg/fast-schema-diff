@@ -1,0 +1,22 @@
+import { diffSchemas } from 'fast-schema-diff';
+
+const oldSchema = {
+  type: 'object',
+  properties: {
+    id: { type: 'string' },
+    email: { type: 'string' }
+  },
+  required: ['id']
+};
+
+const newSchema = {
+  type: 'object',
+  properties: {
+    id: { type: 'number' },
+    email: { type: 'string' }
+  },
+  required: ['id', 'email']
+};
+
+const changes = diffSchemas(oldSchema, newSchema);
+console.log(changes);
