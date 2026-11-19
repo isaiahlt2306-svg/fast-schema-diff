@@ -1,0 +1,22 @@
+{
+  "name": "fast-schema-diff",
+  "version": "1.0.0",
+  "description": "Lightweight, zero-dependency TypeScript utility for diffing JSON schemas in CI/CD pipelines.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test"
+  },
+  "keywords": [
+    "json-schema",
+    "diff",
+    "validation",
+    "ci-cd",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
